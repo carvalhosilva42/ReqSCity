@@ -1,0 +1,20 @@
+.rTable{width: 100%; text-align: center;}
+    .rTable thead{background: black; font-weight: bold; color:#fff; font-size:50;}
+    .rTable tbody tr:nth-child(2n){background: #ccc;}
+    .rTable thead , .rTable td{padding: 7px 0;text-align: center;}
+
+@media screen and (max-width: 480px){
+    .content{width: 94%;}
+
+    .rTable thead{display: flex; flex-direction: column;}
+    .rTable tbody td{display: flex; flex-direction: column; }
+}
+
+@media only screen and (min-width: 1200px){
+    .content{width:100%;}
+    .rTable tbody tr td:nth-child(1){width:10%;}
+    .rTable tbody tr td:nth-child(2){width:30%;}
+    .rTable tbody tr td:nth-child(3){width:20%;}
+    .rTable tbody tr td:nth-child(4){width:10%;}
+    .rTable tbody tr td:nth-child(5){width:30%;}
+}

@@ -1,0 +1,23 @@
+@keyframes animacao2 {
+    0% { margin-left: 0; }
+    45% { margin-left: 0; }
+    50% { margin-left: -100%; }
+    100% { margin-left: -100%; }
+
+}
+.galery2 {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.galery2 .fotos2 {
+    width: 500%;
+    animation-name: animacao2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.galery2 .fotos2 img {
+    width: 19.9%;
+}

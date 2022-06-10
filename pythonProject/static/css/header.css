@@ -1,0 +1,44 @@
+header.header{
+    background-color: white;
+    box-shadow:
+        2px 0 10px rgba(252, 209, 209, 0.12),
+        2px 0 15px 0 rgba(0,0,0,0.0.09);
+    padding: 0px 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: var(--shadow);
+
+}
+header.header h1{
+    font-size: 1.8em;
+}
+header.header p{
+    font-size: 1.1em;
+}
+.botao{
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255);
+    font-weight: 300;
+    padding: 10px;
+    border-width:0ch;
+    width: 100%;
+}
+.botao{
+    background-color: rgba(201, 5, 5, 0.774);
+    box-shadow:
+        2px 0 10px rgba(0,0,0,0.12),
+        2px 0 15px 0 rgba(0,0,0,0.0.09);
+}
+.botao:hover{
+    background: linear-gradient(
+        135deg,
+        #f00808,
+        #32dac3 100%
+    );
+    box-shadow: inset 0 0 0 3px linear-gradient(
+        135deg,
+        #07a7e7,
+        #32dac3 100%
+    );;
+}

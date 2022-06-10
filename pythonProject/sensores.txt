@@ -1,0 +1,196 @@
+air pollutant
+heart beat
+speed
+touch
+optical dust
+wind speed
+sound
+soil humidity
+so2
+water conductivity
+atmospheric pressure
+vehicle count
+no2
+cloud cover
+wind direction
+sun position elevation
+gaseous pollutant
+no
+pressure
+shake
+methane
+wind chill
+humidity
+image
+skin conductance
+air humidity
+o3
+dew point
+visibility
+cholesterol
+electric field
+oxygen
+throttle
+proximity
+leaf wetness
+sun position direction
+blood pressure
+gyrometer
+delta dew point
+conductivity
+water o2 ion
+water ph
+gyroscope
+door state
+dust
+co
+electrical
+co2
+voltage
+alcohol level
+light
+ph
+distance
+gp
+water no3 ion
+water nh4 ion
+nh3
+precipitation
+solar radiation
+frequency
+ultrasonic
+h2s
+seat belt tension
+weight
+air humidity
+humidity
+air humidity
+air pollutant
+air pollutant
+alcohol level
+alcohol level
+atmospheric pressure
+atmospheric pressure
+atmospheric pressure
+blood pressure
+blood pressure
+co2
+gaseous pollutant
+co2
+co2
+co
+gaseous pollutant
+cholesterol
+cholesterol
+cloud cover
+cloud cover
+conductivity
+delta dew point
+dew point
+distance
+distance
+door state
+dust
+electric field
+electrical
+frequency
+gp
+gaseous pollutant
+air pollutant
+gyrometer
+gyrometer
+gyroscope
+gyroscope
+gyroscope
+h2s
+gaseous pollutant
+heart beat
+heart beat
+humidity
+humidity
+humidity
+humidity
+image
+leaf wetness
+leaf wetness
+light
+light
+light
+light
+methane
+gaseous pollutant
+nh3
+gaseous pollutant
+no2
+gaseous pollutant
+no2
+no
+gaseous pollutant
+o3
+gaseous pollutant
+optical dust
+dust
+oxygen
+gaseous pollutant
+ph
+ph
+ph
+precipitation
+precipitation
+precipitation
+pressure
+pressure
+proximity
+so2
+gaseous pollutant
+seat belt tension
+seat belt tension
+shake
+shake
+shake
+skin conductance
+skin conductance
+skin conductance
+soil humidity
+humidity
+soil humidity
+solar radiation
+solar radiation
+solar radiation
+sound
+sound
+sound
+speed
+speed
+sun position direction
+sun position direction
+sun position elevation
+sun position elevation
+throttle
+throttle
+touch
+ultrasonic
+ultrasonic
+vehicle count
+vehicle count
+visibility
+visibility
+voltage
+water conductivity
+conductivity
+water nh4 ion
+water no3 ion
+water o2 ion
+water ph
+ph
+weight
+weight
+wind chill
+wind chill
+wind direction
+wind direction
+wind speed
+speed
+wind speed
+wind speed
+wind speed

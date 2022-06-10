@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/estilo.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/app.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/footer.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/nav.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/header.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/botoes.css')}}">
+</head>
+<script>
+</script>
+<body>
+    <div class="app">
+        <header class="header d-none d-sm-flex flex-column">
+            <h1 class="lead text-muted">ReqSCity: An Application Requirement Analysis Tool for Smart Cities</h1>
+        </header>
+        <aside class="menu-area">
+            <nav class="menu">
+                <form action="/" method="GET">
+                    <button class="botao">Inicio</button>
+                </form>
+                <form action="/instrucoes" method="GET">
+                    <button class="botao">Instruções</button>
+                </form>
+
+            </nav>
+        </aside>
+        <main class="content container-fluid">
+            <div class="p-3 mt-3">
+                <div class="container">
+                    <div class="text-black">
+                <h1>{{ variavel }}</h1>
+                <form action="{{url_for('homepage')}}" method="post" enctype="multipart/form-data">
+                    <label for ="">Requisito:</label>
+                    <input type="file" name="file" placeholder="Insira um requisito">
+                    <div class="opcoes">
+                        <input type="radio" name="options" id="1" value="1">
+                        <label>Ambiguidade</label>
+                        <input type="radio" name="options" id="2" value="2">
+                        <label>Incompletude</label>
+                        <input type="radio" name="options" id="3" value="3">
+                        <label>Contextualização</label>
+                    </div>
+                    <button class="btn2 fourth2">Enviar</button>
+                    <table class="rTable">
+                        {% if opcao != 3 %}
+                            <tr>
+                                {% for header in headings %}
+                                <th class="h3 text-center">{{ header}}</th>
+                                {%endfor%}
+                            </tr>
+                            {%for row in data %}
+                            <tr>
+                                <td>{{row[0]}}</td>
+                                {% for cell in row[1] %}
+                                {% if cell == True %}
+                                    <td><i class="glyphicon glyphicon-remove"></i></td>
+                                {% else %}
+                                    <td><i class="glyphicon glyphicon-ok"></i></td>
+
+                                {% endif %}
+                                {%endfor%}
+                            </tr>
+
+                        {%endfor%}
+                            {% else %}
+                                <h2>Requisitos Contextualizados</h2>
+                                <tr>
+                                    <th class="h3 text-center">Nº Requisito</th>
+                                    <th class="h3 text-center">Contextualizados</th>
+                                </tr>
+                                {%for row in data %}
+                                <tr>
+                                    <td>{{row[0]}}</td>
+                                    {% if row[1][0] == True %}
+                                        <td><i class="glyphicon glyphicon-ok"></i></td>
+                                    {% endif %}
+                                {%endfor%}
+                                </tr>
+                            <table class="rTable">
+                                <h2>Requisitos Contextualizados porém com o sentido do sensor Incompleto</h2>
+                                <tr>
+                                    <th class="h3 text-center">NºRequisito</th>
+                                    <th class="h3 text-center">Incompletos</th>
+                                </tr>
+                                {%for row in data %}
+                                <tr>
+                                    {% if row[1][1] == True %}
+                                        <td>{{row[0]}}</td>
+                                        <td><i class="glyphicon glyphicon-ok"></i></td>
+                                    {% endif %}
+                                {%endfor%}
+                                </table>
+                            {% endif %}
+                        </table>
+
+                </form>
+            </div>
+        </div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
